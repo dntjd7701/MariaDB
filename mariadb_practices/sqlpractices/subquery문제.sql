@@ -236,7 +236,7 @@ select s.salary as manager_salary, dm.dept_no as dn, e.first_name as manger_name
 				and e.emp_no=s.emp_no
 				and dm.to_date='9999-01-01'
 				and s.to_date='9999-01-01';
-    
+      
     
 
 -- from 1
