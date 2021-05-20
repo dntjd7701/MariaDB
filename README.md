@@ -1,38 +1,39 @@
 # RDBMS
+# SQL ì—°ìŠµ ë° SQL ì—°ìŠµë¬¸ì œ 
 
 		1. (R)DBMS : DA, DB Scheme(entity, ERD Logical) -> table(physical)
-+ ½ºÅ°¸¶ ´Ü°è¿¡¼­´Â ³í¸®Àû ¼³°è, ±× ¼³°è¸¦ ¹ÙÅÁÀ¸·Î tableÀ» ¹°¸®ÀûÀ¸·Î ±¸¼ºÇÑ´Ù.
++ ìŠ¤í‚¤ë§ˆ ë‹¨ê³„ì—ì„œëŠ” ë…¼ë¦¬ì  ì„¤ê³„, ê·¸ ì„¤ê³„ë¥¼ ë°”íƒ•ìœ¼ë¡œ tableì„ ë¬¼ë¦¬ì ìœ¼ë¡œ êµ¬ì„±í•œë‹¤.
 
 
 
 
 
-		2. SQL(Structured Query Language) : ±¸Á¶È­µÇ¾îÀÖ´Â Äõ¸® ¾ð¾î
+		2. SQL(Structured Query Language) : êµ¬ì¡°í™”ë˜ì–´ìžˆëŠ” ì¿¼ë¦¬ ì–¸ì–´
 1. DDL
-2. DCL(data control language, ÀÌÁö¸¸ Á¤È®È÷´Â µ¥ÀÌÅÍÀÇ access¸¦ controlÇÑ´Ù°í »ý°¢ÇÏ¸éµÈ´Ù.)
+2. DCL(data control language, ì´ì§€ë§Œ ì •í™•ížˆëŠ” ë°ì´í„°ì˜ accessë¥¼ controlí•œë‹¤ê³  ìƒê°í•˜ë©´ëœë‹¤.)
 3. DML(CRUD)
-4. Á¤±ÔÈ­(Normaliztion) / ¹ÝÁ¤±ÔÈ­
+4. ì •ê·œí™”(Normaliztion) / ë°˜ì •ê·œí™”
 
 
 
 
 		3. DB Programming(C,C++,JAVA-JDBC, Python, JS, PHP ...)
-+ JDBC programming¸¸ Àß ¹è¿ì¸é ¾î¶² DB¸¦ »ç¿ëÇÏ´øÁö Äõ¸®¸¦ ³¯¸± ¼ö ÀÖ´Ù.
-Classname.DriverManager.get(asdfa)¿Í °´Ã¼ ÁöÇâ Æ¯Â¡À» ÅëÇØ °´Ã¼¸¦ »Ì¾ÆÁÖ°í ¿ì¸®´Â ÇÏ³ªÀÇ ÄÚµù¸¸ ÇÏ¸é µÈ´Ù.
++ JDBC programmingë§Œ ìž˜ ë°°ìš°ë©´ ì–´ë–¤ DBë¥¼ ì‚¬ìš©í•˜ë˜ì§€ ì¿¼ë¦¬ë¥¼ ë‚ ë¦´ ìˆ˜ ìžˆë‹¤.
+Classname.DriverManager.get(asdfa)ì™€ ê°ì²´ ì§€í–¥ íŠ¹ì§•ì„ í†µí•´ ê°ì²´ë¥¼ ë½‘ì•„ì£¼ê³  ìš°ë¦¬ëŠ” í•˜ë‚˜ì˜ ì½”ë”©ë§Œ í•˜ë©´ ëœë‹¤.
 
 
->> ¼öÁ¤ ¿ä¸Á
+>> ìˆ˜ì • ìš”ë§
 	
 	
 
 ---
 
->ÇÑ ¿£Æ¼Æ¼ÀÇ ¼Ó¼ºÀÌ¿´´ø ºÎºÐÀÌ »õ·Î¿î ¿£Æ¼Æ¼·Î ¸¸µé¾îÁ®¾ß¸¸ ÇÒ ¶§, **°ü°è**°¡ »ý°Ü³­´Ù.
+>í•œ ì—”í‹°í‹°ì˜ ì†ì„±ì´ì˜€ë˜ ë¶€ë¶„ì´ ìƒˆë¡œìš´ ì—”í‹°í‹°ë¡œ ë§Œë“¤ì–´ì ¸ì•¼ë§Œ í•  ë•Œ, **ê´€ê³„**ê°€ ìƒê²¨ë‚œë‹¤.
 
 ## SQL
 
 		DML-SELECT,INSERT,UPDATE,DELETE,MERGE
-+ ±âº», Áý°è, JOIN, SUBQUERY
++ ê¸°ë³¸, ì§‘ê³„, JOIN, SUBQUERY
 
 
 
@@ -46,35 +47,35 @@ Classname.DriverManager.get(asdfa)¿Í °´Ã¼ ÁöÇâ Æ¯Â¡À» ÅëÇØ °´Ã¼¸¦ »Ì¾ÆÁÖ°í ¿ì¸®´
 ---
 
 ## MySQL 
-		mysql -u root -p (DBA±ÇÇÑÀ¸·Î Á¢¼Ó)
-1. µ¥ÀÌÅÍº£ÀÌ½º »ý¼º
+		mysql -u root -p (DBAê¶Œí•œìœ¼ë¡œ ì ‘ì†)
+1. ë°ì´í„°ë² ì´ìŠ¤ ìƒì„±
 	ex)	MariaDB [none]>create database webdb;
-2. »ç¿ëÀÚ »ý¼º(ÀÎÁõ, ºñ¹Ð¹øÈ£)
+2. ì‚¬ìš©ìž ìƒì„±(ì¸ì¦, ë¹„ë°€ë²ˆí˜¸)
 	ex)	MariaDB [none]>create usr 'webdb'@'localhost' identified by 'webdb';
-3. ±ÇÇÑ ºÎ¿©
+3. ê¶Œí•œ ë¶€ì—¬
 	ex) MariaDB [webdb]> grant all privileges on webdb.* to 'webdb'@'localhost';
-4. »õ·Î¿î º¯°æ »çÇ× Àû¿ë
+4. ìƒˆë¡œìš´ ë³€ê²½ ì‚¬í•­ ì ìš©
 	MariaDB [webdb]> flush privileges;
-5. Å×½ºÆ® 
+5. í…ŒìŠ¤íŠ¸ 
 	mysql -u webdb -D webdb -p;
 	
 	
 > workbench
 
-1. °èÁ¤ »ý¼ºÇØ¼­ ¿¬°áÇØÁÖ±â (Å¬¶óÀÌ¾ðÆ®ÂÊ ¾ÆÀÌÇÇ·Î)
-2. °èÁ¤ È®ÀÎÇÏ±â
+1. ê³„ì • ìƒì„±í•´ì„œ ì—°ê²°í•´ì£¼ê¸° (í´ë¼ì´ì–¸íŠ¸ìª½ ì•„ì´í”¼ë¡œ)
+2. ê³„ì • í™•ì¸í•˜ê¸°
 + use mysql;
 + select user,host from user;
 
 
 		
-		sftp¿¡¼­ ÆÄÀÏ °¡Á®¿Í¼­ Å×ÀÌºí·Î ¿Å±â±â
+		sftpì—ì„œ íŒŒì¼ ê°€ì ¸ì™€ì„œ í…Œì´ë¸”ë¡œ ì˜®ê¸°ê¸°
 
-1. sftp °èÁ¤¸í@ÁÖ¼Ò 
-2. put ÆÄÀÏ¸í
-3. °èÁ¤ Á¢¼ÓÇØ¼­ È®ÀÎ
-4. mysql Á¢¼Ó
-5. load data local infile 'ÆÄÀÏ°æ·Î/ÆÄÀÏ' into table Å×ÀÌºí¸í;
+1. sftp ê³„ì •ëª…@ì£¼ì†Œ 
+2. put íŒŒì¼ëª…
+3. ê³„ì • ì ‘ì†í•´ì„œ í™•ì¸
+4. mysql ì ‘ì†
+5. load data local infile 'íŒŒì¼ê²½ë¡œ/íŒŒì¼' into table í…Œì´ë¸”ëª…;
 
 	
 	
